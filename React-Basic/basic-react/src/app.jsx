@@ -5,7 +5,7 @@ import preactLogo from './assets/preact.svg'
 // import './app.css'
 
 
-
+// just we have to implement the simple functionalities. of the title description and compeleted..
 
 // any time child re-render..parent re-render as werlll
 export function App() {
