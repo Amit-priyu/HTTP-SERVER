@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks'
 
 import './app.css'
+import { RevenueCard } from './components/RevenueCard';
 
 export function App() {
 // things  to understand. flex,grid,
@@ -9,13 +10,13 @@ export function App() {
 // vanilla to tailwind..
   return (
     <>
-     <div className='grid grid-cols-1 md:grid-cols-4'>
-        <div className='bg-red-500'>Hi There</div>
-        <div className='bg-green-500'>Hi There</div>
-        <div className='bg-yellow-500'>Hi There</div>
-        <div className='bg-red-500'>Hi There</div>
-     </div>
+      <div className='grid grid-cols-4'>
+        <RevenueCard title={"Amount Pendig"} 
+          amount={"92,312.20"}
+          orderCount={13}
+        />
+      </div>
     </>
-  )
+  ) 
 }
 export default App;
